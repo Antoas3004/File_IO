@@ -1,0 +1,19 @@
+import java.io.FileWriter;
+
+public class File_Writter {
+
+	public static void main(String[] args) {
+		// File reader and file writter code always write inside
+		// try and catch block
+		// because file io only work with try and catch
+		try {
+			FileWriter fw = new FileWriter("C:\\Users\\Anto\\Desktop\\File_IO\\File Witter.txt");
+			// String s = "file is writing in text file";
+			String s = "33" ;
+			fw.write(s);
+			fw.close();
+		} catch (Exception e) {
+			System.out.println("file not write");
+		}
+	}
+}
